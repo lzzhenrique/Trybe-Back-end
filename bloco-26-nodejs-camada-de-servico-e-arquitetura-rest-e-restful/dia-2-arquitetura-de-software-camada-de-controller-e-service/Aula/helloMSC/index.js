@@ -1,0 +1,24 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const Author = require('./controllers/Author');
+
+const errorMiddleware = require('./middlewares/error');
+
+const app = express();
+
+app.use(bodyParser.json());
+
+app.get('/authors', Author.getAll );
+
+app.get('/authors/:id', Author.findById); 
+
+app.post('/author', Author.create);
+
+app.use(errorMiddleware);
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`App listening on ${PORT}`)
+});

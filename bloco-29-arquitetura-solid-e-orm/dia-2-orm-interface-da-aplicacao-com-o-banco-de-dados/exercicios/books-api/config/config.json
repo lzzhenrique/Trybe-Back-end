@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Luiz",
+    "password": "trybe123",
+    "database": "booksStorage",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "Luiz",
+    "password": "trybe123",
+    "database": "booksStorage",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "Luiz",
+    "password": "trybe123",
+    "database": "booksStorage",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
